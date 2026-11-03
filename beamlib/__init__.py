@@ -1,0 +1,1 @@
+"""Beam: inbox → visual briefs."""

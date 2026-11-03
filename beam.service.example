@@ -1,0 +1,15 @@
+[Unit]
+Description=Beam inbox watcher
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=/home/mrjohn/Work/tries/2026-11-03-beam
+ExecStart=/usr/bin/env python3 /home/mrjohn/Work/tries/2026-11-03-beam/beam.py watch
+Restart=on-failure
+RestartSec=5
+Environment=PYTHONUNBUFFERED=1
+
+[Install]
+WantedBy=default.target

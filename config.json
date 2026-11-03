@@ -1,0 +1,88 @@
+{
+  "api": {
+    "base_url": "http://127.0.0.1:11434",
+    "timeout_seconds": 600
+  },
+  "models": {
+    "decision": "deepseek-v4.1-flash:1017-cloud",
+    "premium": "deepseek-v4.1-flash:1017-cloud",
+    "cheap": "glm-5.3-flash:cloud",
+    "think": false,
+    "decision_num_predict": 500,
+    "extract_num_predict": 8000,
+    "temperature": 0.2
+  },
+  "categories": {
+    "research": {
+      "label": "Research",
+      "accent": "#2563eb",
+      "blurb": "Papers, studies, deep dives, and evidence"
+    },
+    "code": {
+      "label": "Code",
+      "accent": "#7c3aed",
+      "blurb": "Repos, technical notes, and engineering"
+    },
+    "finance": {
+      "label": "Finance",
+      "accent": "#047857",
+      "blurb": "Markets, money, and business models"
+    },
+    "writing": {
+      "label": "Writing",
+      "accent": "#c2410c",
+      "blurb": "Essays, drafts, and storytelling"
+    },
+    "admin": {
+      "label": "Admin",
+      "accent": "#475569",
+      "blurb": "Paperwork, logistics, and life maintenance"
+    },
+    "health": {
+      "label": "Health",
+      "accent": "#be123c",
+      "blurb": "Medicine, fitness, and wellbeing"
+    },
+    "energy": {
+      "label": "Energy",
+      "accent": "#ca8a04",
+      "blurb": "Power, climate, and infrastructure"
+    },
+    "content-creation": {
+      "label": "Content Creation",
+      "accent": "#db2777",
+      "blurb": "Video, social, and publishing ideas"
+    },
+    "other": {
+      "label": "Other",
+      "accent": "#52525b",
+      "blurb": "Everything that resists a box"
+    }
+  },
+  "limits": {
+    "max_source_chars": 160000,
+    "preview_chars": 6000,
+    "route_preview_chars": 4000,
+    "max_fetch_bytes": 8000000,
+    "max_image_bytes": 2500000,
+    "max_quotes": 10
+  },
+  "collections": {
+    "model": "premium",
+    "max_sources": 12,
+    "per_source_chars": 45000
+  },
+  "watch": {
+    "interval_seconds": 2.0,
+    "settle_seconds": 1.2
+  },
+  "server": {
+    "host": "127.0.0.1",
+    "port": 8765
+  },
+  "ui": {
+    "site_name": "Beam Library",
+    "theme": "auto",
+    "default_language": "en"
+  }
+}
